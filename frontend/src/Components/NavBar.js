@@ -2,20 +2,20 @@ import React from "react";
 import { Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const NavBar = () => {
+const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 	const menuItems = [
         {
 			name: "Explore",
-			href: "",
+			href: "/Explore",
 		},
 		{
 			name: "Favourite",
-			href: "",
+			href: "/Favorite",
 		},
 		{
 			name: "Top Models",
-			href: "",
+			href: "/Top-Model",
 		},
     ];
     const navigate = useNavigate();
@@ -136,4 +136,4 @@ const NavBar = () => {
 	);
 };
 
-export default NavBar;
+export default Navbar;
