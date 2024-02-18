@@ -68,6 +68,7 @@ const ModelPage = () => {
 			toast.error("Error Please try again");
 		}
 		let favData = JSON.parse(localStorage.getItem("favoriteModel"));
+		// favData = JSON.parse(favData)
 		const indexToRemove = favData.indexOf(id);
 		favData.splice(indexToRemove, 1);
 		localStorage.setItem("favoriteModel", JSON.stringify(favData));
@@ -77,7 +78,7 @@ const ModelPage = () => {
 	return (
 		<>
 			<Navbar />
-			<div className="flex flex-col md:flex-row justify-center items-center p-4 font-[Helvetica,sans-serif] overflow-hidden">
+			<div className="flex flex-col md:flex-row justify-center items-center p-4 font-[Outfit,sans-serif] overflow-hidden">
 				<img
 					src={data.model.imageURL}
 					alt="Laptop"
@@ -141,11 +142,11 @@ const ModelPage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex font-bold justify-center font-[Outfit,sans-serif]">
+			<div className="flex font-bold justify-center font-[Helvetica,sans-serif]">
 				{" "}
-				Recommended Models
+				Suggested Models 
 			</div>
-			<div className="grid md:grid-cols-3 lg:grid-cols-4 p-4 font-[Outfit,sans-serif]">
+			<div className="grid md:grid-cols-3 lg:grid-cols-4 p-4 font-[Helvetica,sans-serif]">
 				{data.suggestionModel.map((model) => (
 					<ModelContainer
 						key={model.id}
