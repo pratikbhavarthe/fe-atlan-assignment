@@ -141,7 +141,7 @@ const Explore = () => {
 					/>
 				</div>
 				<div
-					className="flex flex-colw-screen md:w-[77vw] h-[90vh] overflow-y-scroll overflow-x-hidden"
+					className="flex flex-colw-screen md:w-[77vw] h-[95vh] overflow-y-scroll overflow-x-hidden"
 					ref={containerRef}
 				>
 					<div className="flex flex-col items-center">
