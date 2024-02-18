@@ -3,14 +3,14 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const ModelContainer = ({
-    modelId,
+	modelId,
 	modelName,
 	modelDescription,
 	modelTag,
 	modelLikes,
 	modelURL,
 }) => {
-    const [liked, setLiked] = useState(false);
+	const [liked, setLiked] = useState(false);
 	const [like, setLike] = useState(modelLikes);
 	const navigate = useNavigate();
 
@@ -21,7 +21,7 @@ const ModelContainer = ({
 		}
 	}, []);
 
-    async function likeModel(id) {
+	async function likeModel(id) {
 		const response = await fetch(
 			process.env.REACT_APP_API_URL + `/api/like/${id}`,
 			{
@@ -30,11 +30,11 @@ const ModelContainer = ({
 		);
 		const result = await response.json();
 		if (result.success) {
-			toast.success("Added to favorites");
+			toast.success("Favorite Added");
 		} else {
-			toast.error("Encountered an error. Please retry your action");
+			toast.error("Error Please try again");
 		}
-        setLike(like + 1);
+		setLike(like + 1);
 		setLiked(true);
 		const favData = localStorage.getItem("favoriteModel");
 		if (favData) {
@@ -46,7 +46,7 @@ const ModelContainer = ({
 			localStorage.setItem("favoriteModel", JSON.stringify([id]));
 		}
 	}
-    async function dislikeModel(id) {
+	async function dislikeModel(id) {
 		const response = await fetch(
 			process.env.REACT_APP_API_URL + `/api/dislike/${id}`,
 			{
@@ -55,9 +55,9 @@ const ModelContainer = ({
 		);
 		const result = await response.json();
 		if (result.success) {
-			toast.success("Removed from favorites");
+			toast.success("Favorite Removed");
 		} else {
-			toast.error("Encountered an error. Please retry your action");
+			toast.error("Error Please try again");
 		}
 		let favData = JSON.parse(localStorage.getItem("favoriteModel"));
 		const indexToRemove = favData.indexOf(id);
@@ -66,8 +66,9 @@ const ModelContainer = ({
 		setLiked(false);
 		setLike(like - 1);
 	}
-    return (
-		<div className="rounded-md border border-[#00b5b0] backdrop-blur-xl p-2 m-2 font-[Helvetica,sans-serif]">
+
+	return (
+		<div className="rounded-md border border-[#b5b3b3] backdrop-blur-xl p-2 m-2 font-[Outfit,sans-serif]">
 			<div className="p-4">
 				<div className="flex flex-row justify-between">
 					<h1 className="text-lg font-semibold">{modelName}</h1>
@@ -78,7 +79,7 @@ const ModelContainer = ({
 							}}
 						>
 							<svg
-								className="text-red-500 w-6 h-auto fill-current"
+								className="text-red-400 w-6 h-auto fill-current"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 512 512"
 							>
@@ -93,7 +94,7 @@ const ModelContainer = ({
 							}}
 						>
 							<svg
-								className="text-red-600 w-6 h-auto fill-current"
+								className="text-red-400 w-6 h-auto fill-current"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 512 512"
 							>
