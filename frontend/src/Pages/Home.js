@@ -18,26 +18,26 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className="bg-[#264658] m-0 p-0">
+<div className="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 m-0 p-0">
 			<Navbar />
 			<div className="flex flex-wrap justify-center items-center">
 				<Sphere />
-				<h4 className="text-3xl  home-bottom-text text-[#D3FBD8] font-[Outfit,sans-serif]">
+				<h4 className="text-3xl  home-bottom-text text-[#D3FBD8] font-[Helvetica,sans-serif]">
 					<div className="circle-word-container">
-						<span className="circle-word-long font-[Outfit,sans-serif]">
-							{numberOfModels} Models
+						<span className="circle-word-long font-[Helvetica,sans-serif]">
+							{numberOfModels} AI Models
 						</span>
 					</div>
-					Ready to dive into the world of AI models?
+					Explore to immerse into the realm of AI models?
 					<div className="home-bottom-buttons"></div>
 				</h4>
 			</div>
 			<div className="mx-auto max-w-7xl px-2 pb-4 lg:px-8 ">
 				<div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
-					<div className="font-[Outfit,sans-serif]">
-						<div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full  bg-blue-100">
+					<div className="font-[Helvetica,sans-serif]">
+						<div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full  bg-pink-100">
 							<svg
-								className="h-9 w-9 text-blue-600 bg-transparent"
+								className="h-9 w-9 text-pink-600 bg-transparent"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
@@ -51,19 +51,17 @@ const Home = () => {
 								/>
 							</svg>
 						</div>
-						<h3 className="mt-8 text-lg font-semibold text-[#f26822] font-color">
-							Innovate with Confidence
+						<h3 className="mt-8 text-lg font-semibold text-[#eff156] font-color">
+							Revolutionize with AI
 						</h3>
-						<p className="mt-4 text-sm text-[#93cbf1]">
-							Each model comes with a detailed description, code
-							snippets, and provider information, empowering you
-							to integrate AI seamlessly into your projects.
+						<p className="mt-4 text-sm text-[#e5f1f6]">
+						Every model is accompanied by a comprehensive description, code snippets, and information about the provider, giving you the tools to seamlessly incorporate AI into your projects.
 						</p>
 					</div>
 					<div className="font-[Outfit,sans-serif]">
-						<div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-orange-100">
+						<div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-violet-100">
 							<svg
-								className="h-9 w-9 text-orange-600 bg-transparent"
+								className="h-9 w-9 text-violet-600 bg-transparent"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
@@ -77,19 +75,17 @@ const Home = () => {
 								/>
 							</svg>
 						</div>
-						<h3 className="mt-8 text-lg font-semibold text-[#f26822]">
-							Top Models Showcase
+						<h3 className="mt-8 text-lg font-semibold text-[#eff156]">
+							Top Models Exhibit
 						</h3>
-						<p className="mt-4 text-sm text-[#93cbf1]">
-							Dive into our collection of cutting-edge AI models,
-							showcasing the latest advancements across a variety
-							of categories and industries.
+						<p className="mt-4 text-sm text-[#e5f1f6]">
+						Immerse yourself in our array of state-of-the-art AI models, highlighting the most recent breakthroughs spanning various categories and industries.
 						</p>
 					</div>
-					<div className="font-[Outfit,sans-serif]">
-						<div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
+					<div className="font-[Helvetica,sans-serif]">
+						<div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-purple-100">
 							<svg
-								className="h-9 w-9 text-green-600 bg-transparent"
+								className="h-9 w-9 text-purple-600 bg-transparent"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
@@ -103,20 +99,17 @@ const Home = () => {
 								/>
 							</svg>
 						</div>
-						<h3 className="mt-8 text-lg font-semibold text-[#f26822]">
-							Upload Your Model
+						<h3 className="mt-8 text-lg font-semibold text-[#eff156]">
+							Submit Your Model
 						</h3>
-						<p className="mt-4 text-sm text-[#93cbf1]">
-							Join our community of developers and organizations
-							by sharing your own AI model. Showcase your
-							expertise and contribute to the ever-expanding
-							landscape of AI innovation.
+						<p className="mt-4 text-sm text-[#e5f1f6]">
+						Explore our selection of cutting-edge AI models, featuring the latest advancements across diverse categories and industries.
 						</p>
 					</div>
-					<div className="font-[Outfit,sans-serif]">
-						<div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-red-100">
+					<div className="font-[Helvetica,sans-serif]">
+						<div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
 							<svg
-								className="h-9 w-9 text-red-600 bg-transparent"
+								className="h-9 w-9 text-blue-600 bg-transparent"
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
@@ -130,14 +123,11 @@ const Home = () => {
 								/>
 							</svg>
 						</div>
-						<h3 className="mt-8 text-lg font-semibold text-[#f26822]">
-							Search Models
+						<h3 className="mt-8 text-lg font-semibold text-[#eff156]">
+							Explore Models
 						</h3>
-						<p className="mt-4 text-sm text-[#93cbf1]">
-							Easily find the perfect AI model for your needs
-							using our intuitive search feature. Filter by
-							category, performance metrics, and more to discover
-							the ideal solution for your project.
+						<p className="mt-4 text-sm text-[#e5f1f6]">
+						Delve into our assortment of advanced AI models, showcasing the latest breakthroughs across a range of categories and industries.
 						</p>
 					</div>
 				</div>
