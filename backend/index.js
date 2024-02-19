@@ -69,10 +69,10 @@ app.post("/api/like/:id", (req, res) => {
 		model.likes = model.likes + 1;
 		res.json({
 			success: true,
-			message: "Like Count Updated Successfully.",
+			message: "Like count updated successfully.",
 		});
 	} else {
-		res.status(404).json({ success: false, message: "Model Not Found." });
+		res.status(404).json({ success: false, message: "Model not found." });
 	}
 });
 app.post("/api/dislike/:id", (req, res) => {
@@ -82,15 +82,15 @@ app.post("/api/dislike/:id", (req, res) => {
 		model.likes = model.likes - 1;
 		res.json({
 			success: true,
-			message: "Like Count Updated Successfully.",
+			message: "Like count updated successfully.",
 		});
 	} else {
-		res.status(404).json({ success: false, message: "Model Not Found." });
+		res.status(404).json({ success: false, message: "Model not found." });
 	}
 });
 app.post("/api/uploadModel", (req, res) => {
 	data.push(req.body);
-	res.status(200).json({ success: true, message: "Model Submitted" });
+	res.status(200).json({ success: true, message: "Model uploaded" });
 });
 
 app.listen(port, () => {
