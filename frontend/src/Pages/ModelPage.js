@@ -68,7 +68,6 @@ const ModelPage = () => {
 			toast.error("Error Please try again");
 		}
 		let favData = JSON.parse(localStorage.getItem("favoriteModel"));
-		// favData = JSON.parse(favData)
 		const indexToRemove = favData.indexOf(id);
 		favData.splice(indexToRemove, 1);
 		localStorage.setItem("favoriteModel", JSON.stringify(favData));
@@ -87,13 +86,13 @@ const ModelPage = () => {
 				<div className="my-10 p-6 flex flex-col justify-around group w-full md:w-2/3">
 					<div className="flex justify-between items-center mb-4">
 						<div>
-							<h2 className="text-sm font-semibold tracking-widest text-gray-500">
-								{data.model.provider}
+							<h2 className="text-sm font-semibold tracking-widest text-pink-500">
+								{data.model.source}
 							</h2>
 							<h1 className="text-4xl font-bold">
 								{data.model.name}
 							</h1>
-							<span className="mb-2 inline-block rounded-full bg-gray-100 p-2 py-1 text-[15px] font-semibold text-gray-900">
+							<span className="mb-2 inline-block rounded-full bg-violet-300 p-2 py-1 text-[15px] font-semibold text-white-900">
 								{data.model.category}
 							</span>
 						</div>
@@ -135,7 +134,7 @@ const ModelPage = () => {
 					<div className="mb-4">
 						<p className="text-lg">{data.model.description}</p>
 					</div>
-					<div className="shadow-lg rounded-2xl p-2 bg-slate-100 font-mono">
+					<div className="shadow-lg rounded-2xl p-2 bg-red-100 font-mono">
 						<pre style={{ whiteSpace: "pre-wrap" }}>
 							{data.model.codeSnippet}
 						</pre>
