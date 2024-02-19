@@ -28,7 +28,7 @@ const Home = () => {
 							{numberOfModels} AI Models
 						</span>
 					</div>
-					Explore to immerse into the realm of AI models!
+					Embark on a journey to delve into the world of AI models!
 					<div className="home-bottom-buttons"></div>
 				</h4>
 			</div>
