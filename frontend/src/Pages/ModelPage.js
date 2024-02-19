@@ -78,7 +78,7 @@ const ModelPage = () => {
 	return (
 		<>
 			<Navbar />
-			<div className="flex flex-col md:flex-row justify-center items-center p-4 font-[Outfit,sans-serif] overflow-hidden">
+			<div className="flex flex-col md:flex-row justify-center items-center p-4 font-[Helvetica,sans-serif] overflow-hidden">
 				<img
 					src={data.model.imageURL}
 					alt="Laptop"

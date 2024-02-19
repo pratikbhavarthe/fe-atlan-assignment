@@ -22,13 +22,13 @@ const Home = () => {
 			<Navbar />
 			<div className="flex flex-wrap justify-center items-center">
 				<Sphere />
-				<h4 className="text-3xl  home-bottom-text text-[#D3FBD8] font-[Helvetica,sans-serif]">
+				<h4 className="text-3xl  home-bottom-text text-[#ffcebe] font-[Helvetica,sans-serif]">
 					<div className="circle-word-container">
 						<span className="circle-word-long font-[Helvetica,sans-serif]">
 							{numberOfModels} AI Models
 						</span>
 					</div>
-					Explore to immerse into the realm of AI models?
+					Explore to immerse into the realm of AI models!
 					<div className="home-bottom-buttons"></div>
 				</h4>
 			</div>

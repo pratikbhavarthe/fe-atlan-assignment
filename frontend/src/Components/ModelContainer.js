@@ -104,7 +104,7 @@ const ModelContainer = ({
 						</button>
 					)}
 				</div>
-				<p className="mt-3 text-sm text-gray-600">{modelDescription}</p>
+				<p className="mt-3 text-sm text-violet-900">{modelDescription}</p>
 				<div className="mt-4 flex flex-row justify-between ">
 					<span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
 						{modelTag}

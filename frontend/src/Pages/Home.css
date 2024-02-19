@@ -3,9 +3,7 @@
 	text-align: center;
 	display: block;
 }
-.circle-word-container > span {
-	color: #f26822;
-}
+
 .home-bottom-buttons > button {
 	border-radius: 5px;
 	background-color: transparent;
@@ -18,10 +16,8 @@
 	font-size: x-large;
 	color: white;
 }
-
-/* body {
-  background-image: url('your-image-url.jpg'); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-} */
-
+body {
+	background-image: url('/src/assets/image1.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	} 	
