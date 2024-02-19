@@ -1,13 +1,37 @@
-body {
+/* Importing fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Resetting default styles and applying the box model */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Importing Tailwind CSS styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Setting up the custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track styles */
+::-webkit-scrollbar-track {
+  background: #f2f2f2; 
+}
+
+/* Handle styles */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff8a00, #e52e71); 
+  border: 2px solid #f2f2f2; 
+  border-radius: 10px; 
+}
+
+/* Handle hover styles */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #ff4500, #ff1493); 
+  border: 2px solid #f2f2f2; 
 }
