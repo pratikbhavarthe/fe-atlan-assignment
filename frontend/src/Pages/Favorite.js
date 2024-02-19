@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../Components/Navbar";
 import ModelContainer from "../Components/ModelContainer";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
 const Favorite = () => {
 	const [isEmpty, setIsEmpty] = useState(true);

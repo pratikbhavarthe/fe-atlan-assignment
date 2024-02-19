@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import Navbar from "../Components/Navbar";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
 const UploadModel = () => {
 	const navigate = useNavigate();

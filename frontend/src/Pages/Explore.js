@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "../Components/Navbar";
 import ModelContainer from "../Components/ModelContainer";
 import TagComponent from "../Components/TagComponent";
+import Navbar from "../Components/Navbar";
 
 const Explore = () => {
     const [data, setData] = useState([]);

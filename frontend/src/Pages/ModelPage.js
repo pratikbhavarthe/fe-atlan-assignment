@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Navbar from "../Components/Navbar";
 import ModelContainer from "../Components/ModelContainer";
 import toast from "react-hot-toast";
+import Navbar from "../Components/Navbar";
 
 const ModelPage = () => {
 	const modelId = useParams().modelId;
