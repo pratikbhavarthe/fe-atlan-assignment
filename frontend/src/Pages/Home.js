@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Sphere from "../Components/Sphere";
 import "./Home.css";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+	const navigate = useNavigate();
 	const [numberOfModels, setNumberOfModels] = useState(0);
 	useEffect(() => {
 		const init = async () => {
